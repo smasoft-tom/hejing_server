@@ -1,0 +1,13 @@
+{
+    "predefined_db_csv_col": {
+        "MEASURE_TIME": "MEASURE_TIME",
+        "TOOLID": "TOOLID",
+        "LOT": "LOT",
+        "WAFER_NO": "WAFER_NO",
+        "HASHKEY": "HASHKEY",
+        "FILENAME": "FILE"
+    },
+    "measure_time_format": "%Y/%m/%d %H:%M",
+    "csv_folder": "C:\\Users\\SmaSoft_Tom_Laptop\\Documents\\test\\hejing_test\\hejing_test_data\\csv_data",
+    "processed_csv_folder": "C:\\Users\\SmaSoft_Tom_Laptop\\Documents\\test\\hejing_test\\hejing_test_data\\processed_csv"
+}

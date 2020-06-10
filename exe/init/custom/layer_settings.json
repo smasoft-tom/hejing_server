@@ -1,0 +1,68 @@
+{
+    "sum_layer": {
+        "name": "AI_WATMAP_SUM_XL",
+        "type": "classification",
+        "inference_ip": "127.0.0.1",
+        "inference_port": 8001,
+        "columns": [
+            "UPDATE_TIME",
+            "FILENAME",
+            "CHECK_TIME",
+            "ITEM",
+            "TOOLID",
+            "MEASURE_TIME",
+            "LOT",
+            "WAFER_NO",
+            "HASHKEY",
+            "FLAG"
+        ],
+        "rules": {
+            "NG": "1",
+            "OK": "2"
+        }
+    },
+    "layer_1": {
+        "name": "AI_WATMAP_DATA_XL",
+        "type": "detection",
+        "inference_ip": "127.0.0.1",
+        "inference_port": 8001,
+        "columns": [
+            "HASHKEY",
+            "DEFECT_NO",
+            "SITE_X",
+            "SITE_Y",
+            "DEFECT_SIZE"
+        ],
+        "query_condition": {
+            "table_name": "AI_WATMAP_SUM_XL",
+            "condition": {
+                "FLAG": 1
+            }
+        },
+        "update_flag": -2,
+        "offsets": {
+            "x": 0,
+            "y": 0
+        }
+    },
+    "layer_2": {
+        "name": "AI_WATMAP_SUM_XL",
+        "type": "classification",
+        "inference_ip": "127.0.0.1",
+        "inference_port": 8001,
+        "columns": [
+            "ITEM",
+            "FLAG"
+        ],
+        "rules": {
+            "NG": "3",
+            "OK": "4"
+        },
+        "query_condition": {
+            "table_name": "AI_WATMAP_SUM_XL",
+            "condition": {
+                "FLAG": -2
+            }
+        }
+    }
+}

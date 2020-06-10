@@ -1,0 +1,7 @@
+{
+    "user": "SYSTEM",
+    "pwd": "smasoft",
+    "ip": "localhost",
+    "sid": "xe",
+    "port": 1521
+}
