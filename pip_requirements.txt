@@ -68,7 +68,7 @@ protobuf==3.11.3
 psutil==5.7.0
 pycparser==2.20
 pycryptodomex==3.8.2
-Pygments==2.6.1
+Pygments==2.7.4
 PyInstaller==3.4
 pyparsing==2.4.6
 PyQt5==5.13.1
