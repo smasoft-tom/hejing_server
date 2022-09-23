@@ -64,7 +64,7 @@ pickleshare==0.7.5
 Pillow==6.0.0
 prometheus-client==0.7.1
 prompt-toolkit==3.0.4
-protobuf==3.11.3
+protobuf==3.18.3
 psutil==5.7.0
 pycparser==2.20
 pycryptodomex==3.8.2
